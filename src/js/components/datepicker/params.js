@@ -64,9 +64,9 @@ export const datepicker = new Datepicker({
     todayDate: '2020-01-01',
     availableDays : 10, 
   }
-})
+}, document.getElementById('datepicker'))
 
 export const distpicker = new DistributionPicker({
   trackingData,
   i18n,
-});
+}, document.getElementById('distributionpicker'));
