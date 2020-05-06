@@ -1,0 +1,21 @@
+{
+  "eva": {
+    "version": "3",
+    "components": [
+      "button-ghost"
+    ],
+    "icons": [
+      "logo"
+    ],
+    "paths": {
+      "font": "resources/fonts/",
+      "sprites": "resources/sprites/",
+      "images": "resources/images/"
+    },
+    "media": [],
+    "management": "shopping",
+    "instance": "",
+    "loaders": [],
+    "product": "vacation-rentals"
+  }
+}

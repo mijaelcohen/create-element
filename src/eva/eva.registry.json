@@ -1,0 +1,62 @@
+{
+  "library": "EVA",
+  "email": "eva@despegar.com",
+  "version": "3",
+  "full_version": "3.81.0",
+  "eva": {
+    "version": "3",
+    "components": [
+      "button-ghost"
+    ],
+    "icons": [
+      "logo"
+    ],
+    "paths": {
+      "font": "resources/fonts/",
+      "sprites": "resources/sprites/",
+      "images": "resources/images/"
+    },
+    "media": [],
+    "management": "shopping",
+    "instance": "",
+    "loaders": [],
+    "product": "vacation-rentals"
+  },
+  "package": "http://backoffice.despegar.com/eva/inc/packages/tmp/1588772120693/eva-package.tar.gz",
+  "package_id": 1588772120693,
+  "generated": "2020-05-06T13:35:20.697Z",
+  "maintainers": [
+    {
+      "name": "Marcos Sanchez",
+      "email": "marsanchez@despegar.com"
+    },
+    {
+      "name": "Esteban Coria",
+      "email": "esteban.coria@despegar.com"
+    },
+    {
+      "name": "Julián Schuster",
+      "email": "julian.schuster@despegar.com"
+    },
+    {
+      "name": "Isabel Bensusan",
+      "email": "isabel.bensusan@despegar.com"
+    },
+    {
+      "name": "Julián Saidman",
+      "email": "julian.saidman@despegar.com"
+    },
+    {
+      "name": "Leandro Echevarría",
+      "email": "leandro.echevarria@despegar.com"
+    },
+    {
+      "name": "Silvio Vitullo",
+      "email": "silvio.vitullo@despegar.com"
+    },
+    {
+      "name": "Jaime O`grady",
+      "email": "jaime.ogrady@despegar.com"
+    }
+  ]
+}
