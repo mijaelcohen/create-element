@@ -70,6 +70,3 @@ export const distpicker = new DistributionPicker({
   trackingData,
   i18n,
 });
-
-datepicker.mount();
-distpicker.mount();
