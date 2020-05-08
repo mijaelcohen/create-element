@@ -1,7 +1,7 @@
-import { DistributionPicker } from '../../../../../component-builder/src/components/distributionpicker/ecma5';
-import { Datepicker } from '../../../../../component-builder/src/components/datepicker/ecma5';
-import "../../../../../component-builder/src/components/distributionpicker/ecma5/style.css"
-import "../../../../../component-builder/src/components/datepicker/ecma5/style.css"
+import { DistributionPicker } from '@fe-components/distributionpicker/ecma5';
+import { Datepicker } from '@fe-components/datepicker/ecma5';
+import "@fe-components/distributionpicker/ecma5/style.css"
+import "@fe-components/datepicker/ecma5/style.css"
 
 const i18n = {
   mobileHeaderTitleRooms: 'Habitaciones',
@@ -59,7 +59,7 @@ const i18ndate = {
 export const datepicker = new Datepicker({
   i18n: i18ndate,
   dateSelectionType: 'singleDate',
-  isMobile: true,
+  isMobile: false,
   settings: {
     todayDate: '2020-01-01',
     availableDays : 10, 
