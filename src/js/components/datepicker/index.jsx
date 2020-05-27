@@ -23,6 +23,12 @@ function Form () {
         showAt: datepickerContainer.current
       }
     })
+    datepicker.dispatch({
+      type: 'setDate',
+      payload: {
+          date: '2020-07-26'
+      }
+    });
     setShowDate(!showDate);
   }
   const mountDistribution = () =>{
