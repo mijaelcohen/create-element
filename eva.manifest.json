@@ -2,10 +2,12 @@
   "eva": {
     "version": "3",
     "components": [
-      "button-ghost"
+      "button-ghost",
+      "select"
     ],
     "icons": [
-      "logo"
+      "logo",
+      "arrow-down"
     ],
     "paths": {
       "font": "resources/fonts/",

@@ -59,34 +59,45 @@ const i18ndate = {
   night: 'Noche'
 };
 
+const disableDates = (date) => {
+  let dateFrom = "2020-07-26";
+  let dateTo = "2020-08-10";
+
+  let d1 = dateFrom.split("-");
+  let d2 = dateTo.split("-");
+  let c = date.split("-");
+
+  let from = new Date(d1[0],parseInt(d1[1])-1,d1[2]);  // -1 because months are from 0 to 11
+  let to   = new Date(d2[0],parseInt(d2[1])-1,d2[2]);
+  let check = new Date(c[0],parseInt(c[1])-1,c[2]);
+
+  return !(check > from && check < to)
+}
+
+export const getDatepicker = (modal) =>{
+  const datepicker =  new Datepicker({
+    i18n: i18ndate,
+    dateSelectionType: 'singleDate',
+    isMobile: modal,
+    settings: {
+      todayDate: '2020-07-26',
+      monthsToRender: 1,
+      availableDays: 40,
+    },
+    disableDates
+  });
+  datepicker.mount();
+  return datepicker;
+}
+
+export const getDistpicker = (modal) =>{
+  const distpicker =  new DistributionPicker({
+    trackingData,
+    i18n,
+    isMobile: modal
+  });
+  distpicker.mount();
+  return distpicker;
+}
 
 
-export const datepicker = new Datepicker({
-  i18n: i18ndate,
-  dateSelectionType: 'singleDate',
-  isMobile: false,
-  settings: {
-    todayDate: '2020-07-26',
-    monthsToRender: 1,
-    availableDays: 40,
-  },
-  disableDates: (date) => {
-    let dateFrom = "2020-07-26";
-    let dateTo = "2020-08-10";
-
-    let d1 = dateFrom.split("-");
-    let d2 = dateTo.split("-");
-    let c = date.split("-");
-
-    let from = new Date(d1[0],parseInt(d1[1])-1,d1[2]);  // -1 because months are from 0 to 11
-    let to   = new Date(d2[0],parseInt(d2[1])-1,d2[2]);
-    let check = new Date(c[0],parseInt(c[1])-1,c[2]);
-
-    return !(check > from && check < to)
-  }
-})
-
-export const distpicker = new DistributionPicker({
-  trackingData,
-  i18n,
-});
