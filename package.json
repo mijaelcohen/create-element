@@ -27,8 +27,8 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
-    "@fe-components/datepicker": "^0.2.32",
-    "@fe-components/distributionpicker": "^0.1.14",
+    "@fe-components/datepicker": "0.2.34",
+    "@fe-components/distributionpicker": "0.1.21",
     "preact": "^10.4.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

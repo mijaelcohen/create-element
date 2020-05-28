@@ -12,9 +12,9 @@ function Form () {
   const [showDate, setShowDate] = useState(0);
   
   useEffect(()=>{    
-    datepicker.mount();
     distpicker.mount();
-  });
+    datepicker.mount();
+  }, []);
 
   const mountDatepicker = () => {
     datepicker.dispatch({
@@ -43,7 +43,7 @@ function Form () {
  
   return (
     <React.Fragment>
-      <h1>Prueba de componentes</h1>
+      <h1 className="eva-3-h3">Prueba de componentes</h1>
       <a ref={datepickerContainer} className="eva-3-btn-ghost -md -darken" onClick={mountDatepicker}>
         <em className="btn-text">Date picker</em>
       </a>
