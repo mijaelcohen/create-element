@@ -9,14 +9,16 @@ function Form () {
   const datepickerContainer = React.createRef();
   const distpickerContainer = React.createRef();
   const [isMobile, setIsMobile] = useState(false);
-  let datepicker = getDatepicker(isMobile);
-  let distpicker = getDistpicker(isMobile);
+  let datepicker;
+  let distpicker;
   const [showDist, setShowDist] = useState(0);
   const [showDate, setShowDate] = useState(0);
   
   useEffect(()=> {
-    distpicker.unMount();
-    datepicker.unMount();
+    if(distpicker && datepicker){
+      distpicker.unMount();
+      datepicker.unMount();
+    }
     datepicker = getDatepicker(isMobile);
     distpicker = getDistpicker(isMobile);
   });

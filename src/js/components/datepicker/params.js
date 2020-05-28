@@ -74,27 +74,27 @@ const disableDates = (date) => {
   return !(check > from && check < to)
 }
 
-export const getDatepicker = (modal) =>{
+export const getDatepicker = (isMobile) =>{
   const datepicker =  new Datepicker({
     i18n: i18ndate,
     dateSelectionType: 'singleDate',
-    isMobile: modal,
+    isMobile,
+    disableDates,
     settings: {
       todayDate: '2020-07-26',
       monthsToRender: 1,
       availableDays: 40,
-    },
-    disableDates
+    }
   });
   datepicker.mount();
   return datepicker;
 }
 
-export const getDistpicker = (modal) =>{
+export const getDistpicker = (isMobile) =>{
   const distpicker =  new DistributionPicker({
     trackingData,
     i18n,
-    isMobile: modal
+    isMobile,
   });
   distpicker.mount();
   return distpicker;
