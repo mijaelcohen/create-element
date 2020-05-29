@@ -1,1 +1,2 @@
-# component-builder-example
+# element-generator
+install `npm start` and then run `npm start`
