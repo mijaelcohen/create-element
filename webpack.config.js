@@ -1,6 +1,4 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-const EvaWebpackPlugin = require('eva-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
 
 const path = require('path');
 module.exports = {
@@ -42,9 +40,6 @@ module.exports = {
     minimize: true
   },
   plugins: [
-    new EvaWebpackPlugin({
-      baseOutputPath: path.resolve(__dirname, 'src')
-    }),
     new HtmlWebPackPlugin({
       template: "./src/index.html",
       filename: "./index.html"
